@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <span><i class='bx bx-user '></i> Employee Lists</span>
+      <!-- <div class="wrap">
+        <div class="search">
+           <input type="text" id="searchTerm" placeholder="Search Employees . . ." onkeyup="searchEmployees()">
+        </div>
+     </div> -->
+     <button onclick="openModal()" id="btn-add">
+      <small>Add</small>
+      <i class='bx bxs-user-plus bx-tada-hover' style="padding: 5px;"></i>
+    </button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Salary</th>
+            <th class="action">Edit</th>
+            <th class="action">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <h3> <i class='bx bxs-left-arrow bx-fade-left'></i> <strong> YOUR INFORMATION </strong> <i class='bx bxs-right-arrow bx-fade-right'></i></h3>
+        <form>
+          <label for="m-name">Name *</label>
+          <input id="m-name" type="text" required />
+  
+          <label for="m-role">Role *</label>
+          <input id="m-role" type="text" required />
+  
+          <label for="m-salary">Salary *</label>
+          <input id="m-salary" type="number" required />
+          <button id="btnSave"> <strong>Save</strong> </button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
