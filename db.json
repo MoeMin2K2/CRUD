@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "610a",
+      "name": "Moe Min",
+      "role": "Full Stack",
+      "salary": "500000"
+    },
+    {
+      "id": "4b4e",
+      "name": "Thin Thin oo",
+      "role": "Full Stack",
+      "salary": "500000"
+    },
+    {
+      "id": "b6a0",
+      "name": "Myo  Thu Aung",
+      "role": "Developer",
+      "salary": "4500000"
+    }
+  ]
+}
